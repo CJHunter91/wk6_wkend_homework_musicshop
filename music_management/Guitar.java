@@ -1,3 +1,6 @@
-// package music_management;
+package music_management;
 
-// public class Guitar 
+public class Guitar extends Instrument{
+
+  public Guitar(int numberStrings)
+}
