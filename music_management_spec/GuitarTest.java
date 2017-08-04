@@ -15,7 +15,7 @@ public class GuitarTest{
   }
 
   @Test
-  public void canStrum(){
+  public void canPlay(){
     assertEquals("Strum", guitar.play());
   }
 }
