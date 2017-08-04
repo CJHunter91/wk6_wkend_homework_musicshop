@@ -1,4 +1,3 @@
-
 import static org.junit.Assert.*;
 import org.junit.*;
 import behaviours.*;
@@ -18,4 +17,6 @@ public class GuitarTest{
   public void canPlay(){
     assertEquals("Strum", guitar.play());
   }
+
+  
 }
