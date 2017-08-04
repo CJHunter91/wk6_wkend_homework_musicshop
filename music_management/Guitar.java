@@ -2,5 +2,12 @@ package music_management;
 
 public class Guitar extends Instrument{
 
-  public Guitar(int numberStrings)
+  int numberStrings;
+
+  public Guitar(int numberStrings){
+    super(colour, type);
+    this.numberStrings = numberStrings;
+  }
+
+
 }

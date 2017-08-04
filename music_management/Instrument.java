@@ -1,7 +1,10 @@
 package music_management;
 import behaviours.*;
 
-public abstract class Instrument implements Playable, InstrumentColour, InstrumentType{
+public abstract class Instrument implements Playable{
+
+  InstrumentColour colour;
+  InstrumentType type;
 
   public Instrument(InstrumentColour colour, InstrumentType type){
 
