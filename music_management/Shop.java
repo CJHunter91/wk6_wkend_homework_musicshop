@@ -8,4 +8,8 @@ public class Shop{
   public Shop(){
     this.stock = new ArrayList<Sellable>();
   }
+
+  public int countStock(){
+    return stock.size();
+  }
 }
