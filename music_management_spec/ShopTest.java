@@ -22,7 +22,7 @@ public class ShopTest{
 
   @Test
   public void canAddStock(){
-
-    assertEquals(1, shop.addStock(guitar));
+    shop.addStock(guitar);
+    assertEquals(1, shop.countStock());
   }
 }
