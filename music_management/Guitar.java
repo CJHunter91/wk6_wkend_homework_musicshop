@@ -4,8 +4,8 @@ public class Guitar extends Instrument{
 
   private int numberStrings;
 
-  public Guitar(int numberStrings, InstrumentType type, InstrumentColour colour ){
-    super(colour, type);
+  public Guitar(int numberStrings, InstrumentType type, InstrumentColour colour, int wholesalePrice, int retailPrice ){
+    super(colour, type, wholesalePrice, retailPrice);
     this.numberStrings = numberStrings;
   }
 
@@ -13,9 +13,5 @@ public class Guitar extends Instrument{
     return "Strum";
   }
 
-  public abstract int calculateMarkUp(int wholesale, int retail);
 
-  // public int calculateMarkUp(int wholesale, int retail){
-  //   return retail - wholesale;
-  // }
 }

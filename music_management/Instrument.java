@@ -5,14 +5,20 @@ public abstract class Instrument implements Playable, Sellable{
 
   private InstrumentColour colour;
   private InstrumentType type;
+  private int wholesalePrice;
+  private int retailPrice;
 
-  public Instrument(InstrumentColour colour, InstrumentType type){
+  public Instrument(InstrumentColour colour, InstrumentType type, int wholesalePrice, int retailPrice){
 
     this.colour = colour;
     this.type = type;
-
+    this.wholesalePrice = wholesalePrice;
+    this.retailPrice = retailPrice;
   }
-  public abstract String play();
 
-  public abstract int calculateMarkUp(int wholesale, int retail);
+  public int calculateMarkUp(){
+    return this.retailPrice - this.wholesalePrice;
+  }
+
+
 }

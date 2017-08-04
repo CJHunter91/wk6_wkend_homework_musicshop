@@ -3,18 +3,18 @@ import behaviours.*;
 
 public class Item{
 
-  Sellable item;
+  String item;
   int wholesalePrice;
   int retailPrice;
 
-  public Item(Sellable item, int wholesalePrice, int retailPrice){
+  public Item(String item, int wholesalePrice, int retailPrice){
     this.item = item;
     this.wholesalePrice = wholesalePrice;
     this.retailPrice = retailPrice;
   }
 
-  public int calculateMarkUp(int wholesale, int retail){
-    return retail - wholesale;
+  public int calculateMarkUp(){
+    return this.retailPrice - this.wholesalePrice;
   }
 
 }
