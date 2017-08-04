@@ -3,8 +3,8 @@ import behaviours.*;
 
 public abstract class Instrument implements Playable{
 
-  InstrumentColour colour;
-  InstrumentType type;
+  private InstrumentColour colour;
+  private InstrumentType type;
 
   public Instrument(InstrumentColour colour, InstrumentType type){
 
