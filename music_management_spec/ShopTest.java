@@ -13,6 +13,7 @@ public class ShopTest{
     shop = new Shop();
     guitar = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED, 100, 200); 
 
+
   }
 
   @Test
@@ -31,5 +32,12 @@ public class ShopTest{
     shop.addStock(guitar);
     shop.removeStock();
     assertEquals(0, shop.countStock());
+  }
+  @Test 
+  public void canGetTotalPotentialProfit(){
+    Guitar guitar2 = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED, 100, 200); 
+    shop.addStock(guitar);
+    shop.addStock(guitar2);
+    assertEquals(200, shop.totalPotentialProfit());
   }
 }
