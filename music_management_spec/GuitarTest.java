@@ -10,12 +10,17 @@ public class GuitarTest{
   @Before
 
   public void before(){
-    guitar = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED); 
+    guitar = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED, 100, 200); 
   }
 
   @Test
   public void canPlay(){
     assertEquals("Strum", guitar.play());
+  }
+
+  @Test
+  public void canCalculateMarkUp(){
+    assertEquals(100, guitar.calculateMarkUp());
   }
 
   
