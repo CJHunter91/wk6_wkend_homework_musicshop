@@ -12,5 +12,10 @@ public class ItemTest{
     item = new Item(new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED), 10, 20);
   }
 
+  @Test
+  public void canGetMarkup(){
+    assertEquals(10, item.calculateMarkUp());
+  }
+
 
 }

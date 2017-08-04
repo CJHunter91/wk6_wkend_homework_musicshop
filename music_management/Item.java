@@ -13,5 +13,8 @@ public class Item{
     this.retailPrice = retailPrice;
   }
 
+  public int calculateMarkUp(int wholesale, int retail){
+    return retail - wholesale;
+  }
 
 }

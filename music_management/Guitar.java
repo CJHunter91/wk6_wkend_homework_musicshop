@@ -13,7 +13,9 @@ public class Guitar extends Instrument{
     return "Strum";
   }
 
-  public int calculateMarkUp(int wholesale, int retail){
-    return retail - wholesale;
-  }
+  public abstract int calculateMarkUp(int wholesale, int retail);
+
+  // public int calculateMarkUp(int wholesale, int retail){
+  //   return retail - wholesale;
+  // }
 }
