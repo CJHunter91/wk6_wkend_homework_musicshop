@@ -12,4 +12,8 @@ public class Guitar extends Instrument{
   public String play(){
     return "Strum";
   }
+
+  public int calculateMarkUp(int wholesale, int retail){
+    return retail - wholesale;
+  }
 }
