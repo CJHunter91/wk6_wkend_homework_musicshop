@@ -30,8 +30,10 @@ public class ShopTest{
   @Test
   public void canRemoveSpecificStock(){
     shop.addStock(guitar);
-    shop.removeStock(guitar);
-    assertEquals(0, shop.countStock());
+    Guitar guitar2 = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED, 100, 200); 
+    shop.addStock(guitar2);
+    shop.removeStock(guitar2);
+    assertEquals(1, shop.countStock());
   }
 
   @Test

@@ -17,6 +17,17 @@ public class Shop{
     stock.add(item);
   }
 
+  public void removeStock(Sellable itemToRemove){
+    int count = 0;
+    for(Sellable item: this.stock){
+      if(item == itemToRemove){
+        this.stock.remove(count);
+        break;
+      }
+      count++;
+    }
+  }
+
   public void removeAllStock(){
     stock.clear();
   }
