@@ -1,7 +1,7 @@
 package music_management;
 import behaviours.*;
 
-public class Item{
+public class Item implements Sellable{
 
   String item;
   int wholesalePrice;

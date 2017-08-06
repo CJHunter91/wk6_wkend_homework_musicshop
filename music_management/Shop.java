@@ -20,4 +20,12 @@ public class Shop{
   public void removeStock(){
     stock.clear();
   }
+
+  public int totalPotentialProfit(){
+    int potentialProfit = 0;
+    for(Sellable item: this.stock){
+      potentialProfit += item.calculateMarkUp();
+    }
+    return potentialProfit;
+  }
 }
