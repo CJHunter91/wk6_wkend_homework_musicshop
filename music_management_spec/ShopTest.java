@@ -40,4 +40,15 @@ public class ShopTest{
     shop.addStock(guitar2);
     assertEquals(200, shop.totalPotentialProfit());
   }
+
+  @Test 
+  public void cancanGetTotalPotentialProfitFromItems(){
+    Guitar guitar2 = new Guitar(6, InstrumentType.STRINGS, InstrumentColour.RED, 100, 200);
+    Item item = new Item("Sheet Music", 10, 20); 
+    shop.addStock(guitar);
+    shop.addStock(guitar2);
+    shop.addStock(item);
+    assertEquals(210, shop.totalPotentialProfit());
+
+  }
 }
