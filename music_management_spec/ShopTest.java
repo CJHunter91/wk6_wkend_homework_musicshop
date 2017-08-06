@@ -28,9 +28,16 @@ public class ShopTest{
   }
 
   @Test
-  public void canRemoveStock(){
+  public void canRemoveSpecificStock(){
     shop.addStock(guitar);
-    shop.removeStock();
+    shop.removeStock(guitar);
+    assertEquals(0, shop.countStock());
+  }
+
+  @Test
+  public void canRemoveAllStock(){
+    shop.addStock(guitar);
+    shop.removeAllStock();
     assertEquals(0, shop.countStock());
   }
   @Test 
